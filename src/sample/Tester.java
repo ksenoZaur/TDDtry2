@@ -236,6 +236,19 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate9() {
+
+        Generator object = new Generator();
+
+        // Паттерн Decorator
+        // JavaScript
+        String code = object.generate(1,2);
+        String expected = this.readFromFile("src/sample/input/22.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 
 
 }
