@@ -24,7 +24,7 @@ public class Generator {
                                 "getRadius();}class SquarePeg{private int width;public SquarePeg( int width ){this.width " +
                                 "= width;}public int getWidth(){return this.width;}}class SquarePegAdapter implements " +
                                 "RoundPeg{private SquarePeg peg;public SquarePegAdapter( SquarePeg peg ) {this.peg = peg;}" +
-                                "@Overridepublic int getRadius() {return (int)(peg.getWidth() * Math.sqrt(2)/2);}}public " +
+                                "@Override public int getRadius() {return (int)(peg.getWidth() * Math.sqrt(2)/2);}}public " +
                                 "class RoundHole {private int radius;public int getRadius() {return this.radius;}public " +
                                 "RoundHole( int radius ) {this.redius = radius;}public bool fits( RoundPeg peg ){if( " +
                                 "peg.getRadius() <= this.radius )return true;elsereturn false;}}";

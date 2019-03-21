@@ -242,7 +242,7 @@ public class Tester {
 
         // Паттерн Decorator
         // JavaScript
-        String code = object.generate(1,2);
+        String code = object.generate(2,2);
         String expected = this.readFromFile("src/sample/input/22.txt").trim();
         Assertions.assertEquals(expected, code);
 
@@ -287,5 +287,26 @@ public class Tester {
 
     }
 
+    @Test
+    public void testControllerFieldSelf() {
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Main.main(null);
+            }
+        }).start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Generator generator = new Generator();
+        String code = generator.generate(0, 0);
+        Controller.self.setText( code );
+
+    }
 
 }
