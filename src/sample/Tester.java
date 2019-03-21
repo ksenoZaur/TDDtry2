@@ -288,7 +288,7 @@ public class Tester {
     }
 
     @Test
-    public void testControllerFieldSelf() {
+    public void testController(){
 
         new Thread(new Runnable() {
             @Override
@@ -303,9 +303,8 @@ public class Tester {
             e.printStackTrace();
         }
 
-        Generator generator = new Generator();
-        String code = generator.generate(0, 0);
-        Controller.self.setText( code );
+        Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+        Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
 
     }
 

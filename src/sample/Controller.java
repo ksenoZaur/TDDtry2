@@ -131,10 +131,8 @@ public class Controller {
         }
 
         public void generateButtonAction(ActionEvent actionEvent) {
-            //TODO
-            String code = this.generator.generate(this.comboBoxPattern.getSelectionModel().getSelectedIndex(),
-                    this.comboBoxLanguages.getSelectionModel().getSelectedIndex());
-            this.setText( code );
+
+
 
         }
 
