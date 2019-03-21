@@ -19,6 +19,12 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGetPatterns1(){
 
+        Generator object = new Generator();
+        ArrayList<String> patterns = object.getPatterns();
+
+    }
 
 }
