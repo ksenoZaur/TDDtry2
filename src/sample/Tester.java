@@ -164,5 +164,24 @@ public class Tester {
         String expected = this.readFromFile("src/sample/input/02.txt").trim();
         Assertions.assertEquals(expected, code);
 
+
+        code = object.generate(0,2);
+        expected = this.readFromFile("src/sample/input/02.txt").trim();
+        Assertions.assertEquals(expected, code);
+
     }
+
+    @Test
+    public void testMethodGenerate4() {
+
+        Generator object = new Generator();
+
+        // Паттерн Proxy
+        // Java
+        String code = object.generate(1,0);
+        String expected = this.readFromFile("src/sample/input/10.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 }
