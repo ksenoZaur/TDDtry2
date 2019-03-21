@@ -12,6 +12,24 @@ import org.junit.jupiter.api.Test;
 
 public class Tester {
 
+    // Чтение кода из файла для проверки
+    private String readFromFile( String path ){
+        String text = null;
+
+        try {
+
+            text = new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8);
+            text = text.replaceAll("\\n", "");
+            text = text.replaceAll("\\r", "");
+            text = text.replaceAll("\\t", "");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return text;
+    }
+
     @Test
     public void testCreateObject(){
 
@@ -116,6 +134,8 @@ public class Tester {
         object.generate(0, 0);
 
         String code = object.generate(0,0);
+        String expected = this.readFromFile("src/sample/input/00.txt").trim();
+        Assertions.assertEquals(expected, code);
 
     }
 
