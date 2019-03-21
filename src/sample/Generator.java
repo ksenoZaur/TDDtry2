@@ -23,7 +23,7 @@ public class Generator {
                     "class RoundHole {private int radius;public int getRadius() {return this.radius;}public " +
                     "RoundHole( int radius ) {this.redius = radius;}public bool fits( RoundPeg peg ){if( " +
                     "peg.getRadius() <= this.radius )return true;elsereturn false;}}";
-        else
+        else if( i1 == 1 )
             return "\uFEFFusing System;  namespace Adapter {    class MainApp  {    static void Main()    {" +
                     "      RoundPeg roundPeg = new SquarePegAdapter();      roundPeg.getRadius();      " +
                     "RoundHole hole = new RoundHole(radius);hod.fits(roundPeg);    }  }   class RoundPeg  {    " +
@@ -31,6 +31,11 @@ public class Generator {
                     "SquarePegAdapter : RoundPeg  {    private SquarePeg adaptee = new SquarePeg();     public " +
                     "override int getRadius()    {      adaptee.getWidth();    }  }   class SquarePeg  " +
                     "{int width;    public int getWidth()    {      return width;    }  } }";
+        else
+            return "\uFEFFfunction SquarePeg( width ) {var width = width;this.getWidth = function () " +
+                    "{return width;};};function SquarePegAdapter ( adaptee ) {this.getRadius = function () " +
+                    "{return adaptee.getWidth();};};var squarePeg = new SquarePeg(1);var squareAdapter = new " +
+                    "SquareAdapter(squarePeg);squareAdapter.getRadius();";
 
     }
 }
