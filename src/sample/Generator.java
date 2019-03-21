@@ -4,6 +4,6 @@ import java.util.ArrayList;
 
 public class Generator {
     public ArrayList<String> getPatterns() {
-        return null;
+        return  new ArrayList<String>() {{ add("Adapter"); }};
     }
 }
