@@ -132,7 +132,8 @@ public class Controller {
 
         public void generateButtonAction(ActionEvent actionEvent) {
 
-
+            String code = this.generator.generate(0,0);
+            this.setText( code );
 
         }
 
