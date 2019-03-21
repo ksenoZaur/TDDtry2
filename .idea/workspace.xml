@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Добавлен метод getLanguages()">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тест на поддержку языка Java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Tester.java" afterDir="false" />
     </list>
@@ -84,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+            <state relative-caret-position="387">
+              <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testCreateObject#0;class#Tester#0" />
@@ -95,6 +95,7 @@
                 <element signature="method#testMethodgetPatterns2#2;class#Tester#0" />
                 <element signature="method#testMethodgetPatterns2#3;class#Tester#0" />
                 <element signature="method#testMethodGetLang#0;class#Tester#0" />
+                <element signature="method#testMethodGetLang2#0;class#Tester#0" />
               </folding>
             </state>
           </provider>
@@ -202,7 +203,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553144897099" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553144997527" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -376,7 +377,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1553142271137" duration="1412000" />
+      <workItem from="1553142271137" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="Тест на вызов метода getPatterns()">
       <created>1553143850444</created>
@@ -469,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553144879177</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Тест на поддержку языка Java">
+      <created>1553144979537</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553144979537</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -487,7 +495,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2801000" />
+    <option name="totallyTimeSpent" value="2902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -548,7 +556,8 @@
     <MESSAGE value="Тесты разнесены по разным методам" />
     <MESSAGE value="Тест на вызов метода getLanguages()" />
     <MESSAGE value="Добавлен метод getLanguages()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен метод getLanguages()" />
+    <MESSAGE value="Тест на поддержку языка Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест на поддержку языка Java" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -592,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+        <state relative-caret-position="387">
+          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testCreateObject#0;class#Tester#0" />
@@ -603,6 +612,7 @@
             <element signature="method#testMethodgetPatterns2#2;class#Tester#0" />
             <element signature="method#testMethodgetPatterns2#3;class#Tester#0" />
             <element signature="method#testMethodGetLang#0;class#Tester#0" />
+            <element signature="method#testMethodGetLang2#0;class#Tester#0" />
           </folding>
         </state>
       </provider>

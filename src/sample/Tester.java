@@ -86,4 +86,14 @@ public class Tester {
         Assertions.assertEquals("Java", languages.get(0));
     }
 
+    @Test
+    public void testMethodGetLang3() {
+
+        Generator object = new Generator();
+
+        ArrayList<String> languages = object.getLanguages();
+
+        Assertions.assertEquals("C#", languages.get(1));
+    }
+
 }
