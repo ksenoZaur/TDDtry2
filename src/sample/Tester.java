@@ -34,6 +34,8 @@ public class Tester {
         ArrayList<String> patterns = object.getPatterns();
 
         Assertions.assertEquals("Adapter", patterns.get(0));
+        Assertions.assertEquals("Proxy", patterns.get(1));
+
     }
 
 }
