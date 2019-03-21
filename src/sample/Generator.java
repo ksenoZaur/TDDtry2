@@ -86,7 +86,24 @@ public class Generator {
 
             default:
                 switch (language) {
-
+                    case 0:
+                        return "public interface InterfaceComponent {void doOperation();}class MainComponent " +
+                                "implements InterfaceComponent {@Overridepublic void doOperation() {System.out.print" +
+                                "(\"World!\");}}abstract class Decorator implements InterfaceComponent {protected " +
+                                "InterfaceComponent component;public Decorator (InterfaceComponent c) {component = c;}" +
+                                "@Overridepublic void doOperation() {component.doOperation();}public void newOperation() " +
+                                "{System.out.println(\"Do Nothing\");}}class DecoratorSpace extends Decorator {public " +
+                                "DecoratorSpace(InterfaceComponent c) {super(c);}@Overridepublic void doOperation() " +
+                                "{System.out.print(\" \");super.doOperation();}@Overridepublic void newOperation() " +
+                                "{System.out.println(\"New space operation\");}}class DecoratorComma extends Decorator " +
+                                "{public DecoratorComma(InterfaceComponent c) {super(c);}@Overridepublic void doOperation() " +
+                                "{System.out.print(\",\");super.doOperation();}        @Overridepublic void newOperation() " +
+                                "{System.out.println(\"New comma operation\");}}class DecoratorHello extends Decorator " +
+                                "{public DecoratorHello(InterfaceComponent c) {super(c);}@Overridepublic void doOperation() " +
+                                "{System.out.print(\"Hello\");super.doOperation();}@Overridepublic void newOperation() " +
+                                "{System.out.println(\"New hello operation\");}}class Main {public static void main " +
+                                "(String... s) {Decorator c = new DecoratorHello(new DecoratorComma(new DecoratorSpace" +
+                                "(new MainComponent())));c.doOperation();    c.newOperation();    }}";
                     case 1:
                         return "\uFEFFusing System;namespace Decorator{    class MainApp    {        " +
                                 "static void Main()        {            ConcreteComponent c = new ConcreteComponent();  " +
