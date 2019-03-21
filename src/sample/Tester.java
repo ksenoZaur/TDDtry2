@@ -28,14 +28,41 @@ public class Tester {
     }
 
     @Test
-    public void testMethodgetPatterns2() {
+    public void testMethodGetPatterns2() {
 
         Generator object = new Generator();
         ArrayList<String> patterns = object.getPatterns();
 
         Assertions.assertEquals("Adapter", patterns.get(0));
+
+    }
+
+    @Test
+    public void testMethodGetPatterns3() {
+
+        Generator object = new Generator();
+        ArrayList<String> patterns = object.getPatterns();
+
         Assertions.assertEquals("Proxy", patterns.get(1));
+
+    }
+
+    @Test
+    public void testMethodGetPatterns4() {
+
+        Generator object = new Generator();
+        ArrayList<String> patterns = object.getPatterns();
+
         Assertions.assertEquals("Decorator", patterns.get(2));
+
+    }
+
+    @Test
+    public void testMethodGetPatterns5() {
+
+        Generator object = new Generator();
+        ArrayList<String> patterns = object.getPatterns();
+
         Assertions.assertEquals("Composite", patterns.get(3));
 
     }
