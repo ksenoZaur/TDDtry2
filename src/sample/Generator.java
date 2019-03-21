@@ -12,7 +12,8 @@ public class Generator {
         return  new ArrayList<String>() {{ add("Java"); add("C#");  add("JavaScript");}};
     }
 
-    public void generate(int i, int i1) {
+    public String generate(int i, int i1) {
 
+        return null;
     }
 }
