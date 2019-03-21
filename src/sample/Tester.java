@@ -308,4 +308,47 @@ public class Tester {
 
     }
 
+    @Test
+    public void testController2(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Main.main(null);
+            }
+        }).start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
+
+        for( int i = 0; i < 2; i++ ) {
+
+            Controller.self.getComboBoxLanguages().getSelectionModel().select("Java");
+            Controller.self.getGenerateCode().getOnAction().handle(new ActionEvent());
+            String expected = this.readFromFile("src/sample/input/" + String.valueOf(i) + "0.txt").trim();
+            String actual = Controller.self.getTextFromTextArea();
+            Assertions.assertEquals(expected, actual);
+
+            Controller.self.getComboBoxLanguages().getSelectionModel().select("C#");
+            Controller.self.getGenerateCode().getOnAction().handle(new ActionEvent());
+            expected = this.readFromFile("src/sample/input/" + String.valueOf(i) + "1.txt").trim();
+            actual = Controller.self.getTextFromTextArea();
+            Assertions.assertEquals(expected, actual);
+
+            Controller.self.getComboBoxLanguages().getSelectionModel().select("JavaScript");
+            Controller.self.getGenerateCode().getOnAction().handle(new ActionEvent());
+            expected = this.readFromFile("src/sample/input/" + String.valueOf(i) + "2.txt").trim();
+            actual = Controller.self.getTextFromTextArea();
+            Assertions.assertEquals(expected, actual);
+
+            Controller.self.getComboBoxPattern().getSelectionModel().select("Proxy");
+        }
+
+    }
+
 }

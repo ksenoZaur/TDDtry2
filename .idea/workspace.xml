@@ -233,7 +233,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553157411468" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553157489895" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="C:/SceneBuilder8/jar/jfoenix-8.0.8.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -259,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tester.testController">
+  <component name="RunManager" selected="JUnit.Tester.testController2">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -339,7 +339,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester.testMethodGenerate2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tester.testController2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDDtry2" />
       <extension name="coverage">
         <pattern>
@@ -349,7 +349,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="sample" />
       <option name="MAIN_CLASS_NAME" value="sample.Tester" />
-      <option name="METHOD_NAME" value="testMethodGenerate2" />
+      <option name="METHOD_NAME" value="testController2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -431,11 +431,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tester.testController2" />
         <item itemvalue="JUnit.Tester.testController" />
         <item itemvalue="JUnit.Tester" />
         <item itemvalue="JUnit.Tester.testMethodGenerate4" />
         <item itemvalue="JUnit.Tester.testMethodGenerate3" />
-        <item itemvalue="JUnit.Tester.testMethodGenerate2" />
       </list>
     </recent_temporary>
   </component>
