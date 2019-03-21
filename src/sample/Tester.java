@@ -197,4 +197,16 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate6() {
+
+        Generator object = new Generator();
+
+        // Паттерн Proxy
+        // JavaScript
+        String code = object.generate(1,2);
+        String expected = this.readFromFile("src/sample/input/12.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
 }
