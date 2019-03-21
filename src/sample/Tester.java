@@ -67,4 +67,13 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGetLang(){
+
+        Generator object = new Generator();
+
+        ArrayList<String> languages = object.getLanguages();
+
+    }
+
 }
