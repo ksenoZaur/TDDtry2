@@ -261,6 +261,19 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate11() {
+
+        Generator object = new Generator();
+
+        // Паттерн Composite
+        // C#
+        String code = object.generate(3,1);
+        String expected = this.readFromFile("src/sample/input/31.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 
 
 }
