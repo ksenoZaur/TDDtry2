@@ -106,4 +106,12 @@ public class Tester {
         Assertions.assertEquals("JavaScript", languages.get(2));
     }
 
+    @Test
+    public void testMethodGenerate1() {
+
+        Generator object = new Generator();
+
+        object.generate(0, 0);
+    }
+
 }
