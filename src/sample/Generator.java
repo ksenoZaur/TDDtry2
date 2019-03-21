@@ -11,4 +11,8 @@ public class Generator {
     public ArrayList<String> getLanguages() {
         return  new ArrayList<String>() {{ add("Java"); add("C#");  add("JavaScript");}};
     }
+
+    public void generate(int i, int i1) {
+
+    }
 }
