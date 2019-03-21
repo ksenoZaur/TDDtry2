@@ -57,6 +57,20 @@ public class Generator {
                             "(int id){if( service == null ){service = new ThirdPartyYoutubeClass(); }return service." +
                             "getVideoInfo(id);}public File downloadVideo(int id){if( service == null ){service = new " +
                             "ThirdPartyYoutubeClass(); }return service.downloadVideo(id);}}";
+                case 1:
+                    return "using System;using System.Threading;class MainApp{static void Main(){  IMath p = new " +
+                            "MathProxy();  Console.WriteLine(\"4 + 2 = \" + p.Add(4, 2));  Console.WriteLine(\"4 - " +
+                            "2 = \" + p.Sub(4, 2));  Console.WriteLine(\"4 * 2 = \" + p.Mul(4, 2));  Console.WriteLine" +
+                            "(\"4 / 2 = \" + p.Div(4, 2));  Console.Read();}}public interface IMath{double add(double " +
+                            "x, double y);double Sub(double x, double y);double Mul(double x, double y);double Div(double" +
+                            " x, double y);}class Math : IMath{public Math(){    Console.WriteLine(\"Create object Math. " +
+                            "Wait...\");    Thread.Sleep(1000);}public double Add(double x, double y){return x + y;}public " +
+                            "double Sub(double x, double y){return x - y;}public double Mul(double x, double y){" +
+                            "return x * y;}public double Div(double x, double y){return x / y;}}class MathProxy : " +
+                            "IMath{Math math;public MathProxy(){  math = null;}public double Add(double x, double y){  " +
+                            "return x + y;}public double Sub(double x, double y){  return x - y;}public double Mul(double " +
+                            "x, double y){  if (math == null)      math = new Math();  return math.Mul(x, y);}public double " +
+                            "Div(double x, double y){  if (math == null)      math = new Math();  return math.Div(x, y);}}";
                 default:
                     return "function IMath() {this.add = function(x, y) {};this.sub = function(x, y) {};}function " +
                             "RMath() {this.add = function(x, y) {return x + y;};this.sub = function(x, y) {return x - " +
