@@ -248,6 +248,19 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate10() {
+
+        Generator object = new Generator();
+
+        // Паттерн Composite
+        // Java
+        String code = object.generate(3,0);
+        String expected = this.readFromFile("src/sample/input/30.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 
 
 }
