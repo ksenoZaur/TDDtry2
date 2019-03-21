@@ -42,7 +42,21 @@ public class Generator {
         else
 
             switch ( i ) {
-
+                case 0:
+                    return "public class Main {public static void main(String[] args) {ThirdPartyYoutubeLib object " +
+                            "= new CachedYoutubeClass(); String[] result = object.listVideos();}}public interface " +
+                            "ThirdPartyYoutubeLib {public String[] listVideos();public String getVideoInfo(int id)" +
+                            ";public File downloadVideo(int id);}public class ThirdPartyYoutubeClass implements " +
+                            "ThirdPartyYoutubeLib {private String[] vieos;public String[] listVideos(){return " +
+                            "this.videos;}public String getVideoInfo(int id){return this.videos[ i ];}public File " +
+                            "downloadVideo(int id){return new File( videos[ i ] );}}public class CachedYoutubeClass " +
+                            "implements ThirdPartyYoutubeLib{private ThirdPartyYoutubeClass service;public " +
+                            "CachedYoutubeClass( ThirdPartyYoutubeClass s){this.service = s;}public " +
+                            "CachedYoutubeClass(){}public String[] listVideos(){if( service == null ){service = " +
+                            "new ThirdPartyYoutubeClass(); }return service.listVideos();}public String getVideoInfo" +
+                            "(int id){if( service == null ){service = new ThirdPartyYoutubeClass(); }return service." +
+                            "getVideoInfo(id);}public File downloadVideo(int id){if( service == null ){service = new " +
+                            "ThirdPartyYoutubeClass(); }return service.downloadVideo(id);}}";
                 default:
                     return "function IMath() {this.add = function(x, y) {};this.sub = function(x, y) {};}function " +
                             "RMath() {this.add = function(x, y) {return x + y;};this.sub = function(x, y) {return x - " +
