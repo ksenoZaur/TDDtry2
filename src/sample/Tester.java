@@ -184,4 +184,17 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate5() {
+
+        Generator object = new Generator();
+
+        // Паттерн Proxy
+        // C#
+        String code = object.generate(1,1);
+        String expected = this.readFromFile("src/sample/input/11.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 }
