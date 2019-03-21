@@ -8,6 +8,6 @@ public class Generator {
     }
 
     public ArrayList<String> getLanguages() {
-        return  new ArrayList<String>() {{ add("Java");}};
+        return  new ArrayList<String>() {{ add("Java"); add("C#");}};
     }
 }
