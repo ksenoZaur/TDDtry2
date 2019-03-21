@@ -111,7 +111,12 @@ public class Tester {
 
         Generator object = new Generator();
 
+        // Паттерн Adapter
+        // Java
         object.generate(0, 0);
+
+        String code = object.generate(0,0);
+
     }
 
 }
