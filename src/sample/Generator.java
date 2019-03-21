@@ -41,7 +41,8 @@ public class Generator {
 
         else
 
-            switch ( i ) {
+            switch ( i1 ) {
+
                 case 0:
                     return "public class Main {public static void main(String[] args) {ThirdPartyYoutubeLib object " +
                             "= new CachedYoutubeClass(); String[] result = object.listVideos();}}public interface " +

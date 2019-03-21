@@ -209,5 +209,20 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate7() {
+
+        Generator object = new Generator();
+
+        // Паттерн Decorator
+        // Java
+        String code = object.generate(2,0);
+        String expected = this.readFromFile("src/sample/input/20.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
+
+
 
 }
