@@ -222,7 +222,6 @@ public class Tester {
 
     }
 
-
     @Test
     public void testMethodGenerate8() {
 
