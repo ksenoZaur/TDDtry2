@@ -209,7 +209,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553146187212" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553146270457" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -234,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tester.testMethodGenerate1">
+  <component name="RunManager" selected="JUnit.Tester.testMethodGenerate2">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -334,6 +334,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tester.testMethodGenerate2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDDtry2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.Tester" />
+      <option name="METHOD_NAME" value="testMethodGenerate2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tester.testMethodgetPatterns2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDDtry2" />
       <extension name="coverage">
@@ -386,6 +406,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tester.testMethodGenerate2" />
         <item itemvalue="JUnit.Tester.testMethodGenerate1" />
         <item itemvalue="JUnit.Tester" />
         <item itemvalue="JUnit.Tester.testMethodgetPatterns2" />
