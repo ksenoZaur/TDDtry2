@@ -68,12 +68,22 @@ public class Tester {
     }
 
     @Test
-    public void testMethodGetLang(){
+    public void testMethodGetLang1(){
 
         Generator object = new Generator();
 
         ArrayList<String> languages = object.getLanguages();
 
+    }
+
+    @Test
+    public void testMethodGetLang2() {
+
+        Generator object = new Generator();
+
+        ArrayList<String> languages = object.getLanguages();
+
+        Assertions.assertEquals("Java", languages.get(0));
     }
 
 }
