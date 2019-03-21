@@ -223,6 +223,19 @@ public class Tester {
     }
 
 
+    @Test
+    public void testMethodGenerate8() {
+
+        Generator object = new Generator();
+
+        // Паттерн Decorator
+        // C#
+        String code = object.generate(2,1);
+        String expected = this.readFromFile("src/sample/input/21.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
+
 
 
 }
