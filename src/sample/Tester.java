@@ -35,6 +35,7 @@ public class Tester {
 
         Assertions.assertEquals("Adapter", patterns.get(0));
         Assertions.assertEquals("Proxy", patterns.get(1));
+        Assertions.assertEquals("Decorator", patterns.get(2));
 
     }
 
