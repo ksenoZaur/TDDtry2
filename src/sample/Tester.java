@@ -27,4 +27,13 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodgetPatterns2() {
+
+        Generator object = new Generator();
+        ArrayList<String> patterns = object.getPatterns();
+
+        Assertions.assertEquals("Adapter", patterns.get(0));
+    }
+
 }
