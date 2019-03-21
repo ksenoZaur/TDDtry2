@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тестируем генерацию Java кода Adapter по нажатию кнопки">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тестируем генерацию кода Adapter под C#, JS и кода Proxy под Java, C#, JS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
     </list>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="134" column="54" selection-start-line="134" selection-start-column="54" selection-end-line="134" selection-end-column="54" />
+            <state relative-caret-position="196">
+              <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1309#1876#0" />
@@ -89,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="299" column="13" lean-forward="true" selection-start-line="299" selection-start-column="13" selection-end-line="299" selection-end-column="13" />
+            <state relative-caret-position="332">
+              <caret line="351" column="5" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#readFromFile#0;class#Tester#0" />
@@ -119,8 +119,13 @@
                 <element signature="method#testMethodGenerate7#1;class#Tester#0" />
                 <element signature="method#testMethodGenerate11#0;class#Tester#0" />
                 <element signature="method#testMethodGenerate12#0;class#Tester#0" />
-                <element signature="e#7454#7455#0" expanded="true" />
-                <element signature="e#7501#7502#0" expanded="true" />
+                <element signature="method#testController#0;class#Tester#0" />
+                <element signature="e#6965#6966#0" expanded="true" />
+                <element signature="e#7012#7013#0" expanded="true" />
+                <element signature="method#testController2#0;class#Tester#0" />
+                <element signature="e#7479#7480#0" expanded="true" />
+                <element signature="e#7526#7527#0" expanded="true" />
+                <element signature="e#7808#9094#1" />
               </folding>
             </state>
           </provider>
@@ -233,7 +238,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553157489895" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553157579559" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="C:/SceneBuilder8/jar/jfoenix-8.0.8.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -450,21 +455,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1553142271137" duration="5559000" />
-    </task>
-    <task id="LOCAL-00002" summary="Создание метода getPatterns()">
-      <created>1553143908683</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1553143908683</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Тест на наличие паттерна Adapter в списке">
-      <created>1553144166883</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1553144166883</updated>
+      <workItem from="1553142271137" duration="5703000" />
     </task>
     <task id="LOCAL-00004" summary="Добавлен паттерн Adapter">
       <created>1553144208183</created>
@@ -795,16 +786,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553157390649</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Добавили генерацию Java кода Adapter по нажатию кнопки">
+      <created>1553157438528</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1553157438528</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Тестируем генерацию кода Adapter под C#, JS и кода Proxy под Java, C#, JS">
+      <created>1553157541893</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1553157541893</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tester_testMethodGenerate1 - 2019.03.21 at 12h 27m 54s.xml">
-      <configuration name="Tester.testMethodGenerate1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tester_testMethodGenerate2 - 2019.03.21 at 12h 30m 35s.xml">
-      <configuration name="Tester.testMethodGenerate2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tester_testMethodGenerate2 - 2019.03.21 at 12h 31m 16s.xml">
       <configuration name="Tester.testMethodGenerate2" configurationId="JUnit" />
     </history-entry>
@@ -829,9 +828,15 @@
     <history-entry file="Tester - 2019.03.21 at 15h 24m 53s.xml">
       <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Tester_testController - 2019.03.21 at 15h 36m 58s.xml">
+      <configuration name="Tester.testController" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester_testController2 - 2019.03.21 at 15h 38m 10s.xml">
+      <configuration name="Tester.testController2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6948000" />
+    <option name="totallyTimeSpent" value="7092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -841,7 +846,7 @@
       <window_info id="Image Layers" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12405446" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.12405446" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -849,7 +854,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12765957" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12765957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -879,8 +884,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Тест на генерацию кода Adapter на C#" />
-    <MESSAGE value="Генерация кода Adapter на C#" />
     <MESSAGE value="Тест на генерацию кода Adapter для JS" />
     <MESSAGE value="Генерация кода Adapter для JS" />
     <MESSAGE value="Тест на генерацию кода Proxy для Java" />
@@ -904,7 +907,9 @@
     <MESSAGE value="Тестируем наличие публичного поля self в Controller" />
     <MESSAGE value="Добавили поле self контроллер" />
     <MESSAGE value="Тестируем генерацию Java кода Adapter по нажатию кнопки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестируем генерацию Java кода Adapter по нажатию кнопки" />
+    <MESSAGE value="Добавили генерацию Java кода Adapter по нажатию кнопки" />
+    <MESSAGE value="Тестируем генерацию кода Adapter под C#, JS и кода Proxy под Java, C#, JS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тестируем генерацию кода Adapter под C#, JS и кода Proxy под Java, C#, JS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,25 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="134" column="54" selection-start-line="134" selection-start-column="54" selection-end-line="134" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1309#1876#0" />
-            <element signature="e#1882#2880#0" />
-            <element signature="e#3426#4696#0" />
-            <element signature="e#4702#5484#0" />
-            <element signature="e#5490#5847#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="299" column="13" lean-forward="true" selection-start-line="299" selection-start-column="13" selection-end-line="299" selection-end-column="13" />
+        <state relative-caret-position="332">
+          <caret line="351" column="5" selection-start-line="351" selection-start-column="5" selection-end-line="351" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readFromFile#0;class#Tester#0" />
@@ -996,8 +986,28 @@
             <element signature="method#testMethodGenerate7#1;class#Tester#0" />
             <element signature="method#testMethodGenerate11#0;class#Tester#0" />
             <element signature="method#testMethodGenerate12#0;class#Tester#0" />
-            <element signature="e#7454#7455#0" expanded="true" />
-            <element signature="e#7501#7502#0" expanded="true" />
+            <element signature="method#testController#0;class#Tester#0" />
+            <element signature="e#6965#6966#0" expanded="true" />
+            <element signature="e#7012#7013#0" expanded="true" />
+            <element signature="method#testController2#0;class#Tester#0" />
+            <element signature="e#7479#7480#0" expanded="true" />
+            <element signature="e#7526#7527#0" expanded="true" />
+            <element signature="e#7808#9094#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="133" column="12" lean-forward="true" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1309#1876#0" />
+            <element signature="e#1882#2880#0" />
+            <element signature="e#3426#4696#0" />
+            <element signature="e#4702#5484#0" />
+            <element signature="e#5490#5847#0" />
           </folding>
         </state>
       </provider>
