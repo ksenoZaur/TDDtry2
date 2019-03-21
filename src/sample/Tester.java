@@ -139,7 +139,6 @@ public class Tester {
 
     }
 
-
     @Test
     public void testMethodGenerate2() {
 
@@ -209,4 +208,6 @@ public class Tester {
         Assertions.assertEquals(expected, code);
 
     }
+
+
 }
