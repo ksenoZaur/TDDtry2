@@ -106,6 +106,4 @@ public class Tester {
         Assertions.assertEquals("JavaScript", languages.get(2));
     }
 
-
-
 }
