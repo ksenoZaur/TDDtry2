@@ -153,4 +153,16 @@ public class Tester {
 
     }
 
+    @Test
+    public void testMethodGenerate3() {
+
+        Generator object = new Generator();
+
+        // Паттерн Adapter
+        // JavaScript
+        String code = object.generate(0,2);
+        String expected = this.readFromFile("src/sample/input/02.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+    }
 }
