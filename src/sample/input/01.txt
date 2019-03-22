@@ -1,0 +1,45 @@
+﻿using System;
+ 
+ namespace Adapter
+ {
+  
+  class MainApp
+  {
+    static void Main()
+    {
+      RoundPeg roundPeg = new SquarePegAdapter();
+      roundPeg.getRadius();
+      RoundHole hole = new RoundHole(radius);
+	hod.fits(roundPeg);
+    }
+  }
+ 
+  class RoundPeg
+  {
+    int radius;
+
+    public virtual int getRadius()
+    {
+      return radius;
+    }
+  }
+ 
+  class SquarePegAdapter : RoundPeg
+  {
+    private SquarePeg adaptee = new SquarePeg();
+ 
+    public override int getRadius()
+    {
+      adaptee.getWidth();
+    }
+  }
+ 
+  class SquarePeg
+  {
+	int width;
+    public int getWidth()
+    {
+      return width;
+    }
+  }
+ }

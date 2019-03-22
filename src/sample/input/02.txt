@@ -1,0 +1,17 @@
+﻿function SquarePeg( width ) {
+	var width = width;
+
+	this.getWidth = function () {
+		return width;
+	};
+};
+
+function SquarePegAdapter ( adaptee ) {
+	this.getRadius = function () {
+		return adaptee.getWidth();
+	};
+};
+
+var squarePeg = new SquarePeg(1);
+var squareAdapter = new SquareAdapter(squarePeg);
+squareAdapter.getRadius();
